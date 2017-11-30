@@ -1,26 +1,11 @@
-
 *{
-
-box-sizing: border-box;
-text-align: center;
-
-
+	box-sizing: border-box;
+	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 body {
-	
+	margin: 0;
 
-}
-
-header {
-	border: 1px solid black;
-	margin: 5px 100px 30px 30px;
-
-}
-
-#header {
-	margin-bottom: 20px;
-	height: 70px;
 }
 
 ul li {
@@ -29,65 +14,76 @@ ul li {
 }
 
 ul, h1 {
-	border: 1px solid black;
 	margin-top: 30px;
 }
 
-#name {
+#header {
+	margin-bottom: 0;
+	height: 100px;
+	width: 100%;
+	background-color: #060606;
+	color: white;
+}
 
-	background-color: #B6B2B1;
-	float: left;
-	margin-left: -35px;
+#name {
 	
-	width: 220px;
+	float: left;
+	padding: 0;
 	text-align: center;
-	height: 88px;
+	height: 0%;
+	margin-left: 40px;
 }
 
 #links {
+	
+	color: black;
 	float: right;
-	width: 220px;
-	height: 88px;
+	height: 100%;
 	text-align: center;
-	background-color: #B6B2B1;
-	height: 88px;
+	margin-right: 350px;
+	width: 20%;
 }
 
 
 .wrap {
-	
-	border: 1px solid black;
-	background-color: #E6FFFD;
-	margin-top: 20px;
+	background-color: #F6F3F3;
+	margin-top: 0;
 	margin-bottom: 20px;
-	
-	
+	height: 600px;
 	width: 100%;
+	min-height: 100%;
+  	/* equal to footer height */
+  	margin-bottom: -142px; 
+}
 
-/*	position:absolute;
-	z-index: 1;*/
+.wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 60px; 
+}
+.site-footer {
+  background: #7A7777;
 }
 
 #content {
-	width: 60%;
+	width: 50%;
 	float: left;
 	background-color: #ffffff;
-	border: 1px solid black;
 	margin-bottom: 20px;
 	margin-top: 20px;
-	margin-left: 40px;
+	margin-left: 25px;
+	padding: 0 20px 0 20px;
 }
 
 #connect {
-	width: 25%;
+	width: 20%;
 	background-color: #ffffff;
 	float: left;
-	border: 1px solid black;
 	margin-top: 20px;
-}
-
-div {
-	border: 1px solid black;
+	margin-left: 87px;
+	text-align: center;
 }
 
 #Philipp {
@@ -99,12 +95,18 @@ div {
 }
 
 .ConnectPic {
-	height: 30px;
-	width: 30px;
+	height: 50px;
+	width: 50px;
 }
 
 footer {
-	margin-top: 20px;
 	clear:left;
-	border: 1px solid black;
+	text-align: center;
+	padding-top: 15px;
+	color: white;
+}
+
+
+label, input {
+	display: block;
 }
